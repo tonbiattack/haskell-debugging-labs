@@ -11,6 +11,9 @@ Haskell固有の実行時挙動、エラー表現、パターンマッチを、*
 | `haskell-pattern-match-debug-lab` | 代数的データ型の全コンストラクタを網羅する | `8123267` | `a0c8e25` |
 | `haskell-foldl-strictness-debug-lab` | 無限入力に対する畳み込みの生産性と短絡評価 | `6bbdd3e` | `d8f8ec8` |
 | `haskell-lazy-io-resource-debug-lab` | 遅延I/Oと`withFile`のハンドル寿命を一致させる | `0a53a2d` | `0adcaa7` |
+| `haskell-zip-alignment-debug-lab` | `zip`の件数不一致によるデータ切り捨てを防ぐ | `33cb0c5` | `2581205` |
+| `haskell-recursion-base-case-debug-lab` | 負数入力での再帰停止条件を保証する | `76456f2` | `23b42c9` |
+| `haskell-integral-division-debug-lab` | 整数除算で平均の小数部を失わない | `2026713` | `31c9af1` |
 
 ## 実行方法
 
