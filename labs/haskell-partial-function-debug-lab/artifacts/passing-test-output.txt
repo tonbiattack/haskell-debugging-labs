@@ -1,0 +1,22 @@
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-partial-function-debug-lab-0.1.0.0 (test:spec) (file test/Spec.hs changed)
+Preprocessing test suite 'spec' for haskell-partial-function-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-partial-function-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o ) [Source file changed]
+[2 of 2] Linking /home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/t/spec/build/spec/spec [Objects changed]
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+firstName
+  returns Nothing for an empty list instead of raising an exception [✔]
+  returns the first element for a non-empty list [✔]
+  returns the first element for every non-empty list [✔]
+    +++ OK, passed 100 tests.
+
+Finished in 0.0017 seconds
+3 examples, 0 failures
+Test suite spec: PASS
+Test suite logged to:
+/home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/t/spec/test/haskell-partial-function-debug-lab-0.1.0.0-spec.log
+1 of 1 test suites (1 of 1 test cases) passed.
