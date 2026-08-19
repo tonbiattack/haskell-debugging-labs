@@ -1,0 +1,44 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-zip-alignment-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-zip-alignment-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-zip-alignment-debug-lab-0.1.0.0..
+Preprocessing library for haskell-zip-alignment-debug-lab-0.1.0.0..
+Building library for haskell-zip-alignment-debug-lab-0.1.0.0..
+[1 of 1] Compiling Schedule         ( src/Schedule.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-zip-alignment-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-zip-alignment-debug-lab-0.1.0.0/build/Schedule.o, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-zip-alignment-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-zip-alignment-debug-lab-0.1.0.0/build/Schedule.dyn_o )
+Configuring test suite 'spec' for haskell-zip-alignment-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-zip-alignment-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-zip-alignment-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-zip-alignment-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-zip-alignment-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/haskell-debugging-labs/labs/haskell-zip-alignment-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-zip-alignment-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+assignSlots
+  rejects a schedule when there are more people than time slots [✘]
+  assigns every person when the counts are equal [✔]
+  accepts two empty inputs as a complete empty schedule [✔]
+
+Failures:
+
+  test/Spec.hs:10:43: 
+  1) assignSlots rejects a schedule when there are more people than time slots
+       expected: Nothing
+        but got: Just [("Aki","09:00")]
+
+  To rerun use: --match "/assignSlots/rejects a schedule when there are more people than time slots/"
+
+Randomized with seed 873200204
+
+Finished in 0.0004 seconds
+3 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/haskell-debugging-labs/labs/haskell-zip-alignment-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-zip-alignment-debug-lab-0.1.0.0/t/spec/test/haskell-zip-alignment-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-zip-alignment-debug-lab-0.1.0.0.
+

@@ -1,0 +1,3 @@
+assignSlots :: [String] -> [String] -> Maybe [(String, String)]
+Just [("Aki","09:00"),("Bo","10:00")]
+Just [("Aki","09:00")]
