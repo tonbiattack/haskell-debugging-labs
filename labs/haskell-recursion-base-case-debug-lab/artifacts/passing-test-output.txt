@@ -1,0 +1,25 @@
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-recursion-base-case-debug-lab-0.1.0.0 (lib) (file src/Countdown.hs changed)
+ - haskell-recursion-base-case-debug-lab-0.1.0.0 (test:spec) (dependency rebuilt)
+Preprocessing library for haskell-recursion-base-case-debug-lab-0.1.0.0..
+Building library for haskell-recursion-base-case-debug-lab-0.1.0.0..
+[1 of 1] Compiling Countdown        ( src/Countdown.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-recursion-base-case-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-recursion-base-case-debug-lab-0.1.0.0/build/Countdown.o, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-recursion-base-case-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-recursion-base-case-debug-lab-0.1.0.0/build/Countdown.dyn_o ) [Source file changed]
+Preprocessing test suite 'spec' for haskell-recursion-base-case-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-recursion-base-case-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-recursion-base-case-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-recursion-base-case-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o ) [Countdown changed]
+[2 of 2] Linking /home/ubuntu/work/haskell-debugging-labs/labs/haskell-recursion-base-case-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-recursion-base-case-debug-lab-0.1.0.0/t/spec/build/spec/spec [Objects changed]
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+countDown
+  returns Nothing for a negative starting value instead of recursing forever [✔]
+  returns the terminal value for zero [✔]
+  includes every value down to zero for a positive start [✔]
+
+Finished in 0.0002 seconds
+3 examples, 0 failures
+Test suite spec: PASS
+Test suite logged to:
+/home/ubuntu/work/haskell-debugging-labs/labs/haskell-recursion-base-case-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-recursion-base-case-debug-lab-0.1.0.0/t/spec/test/haskell-recursion-base-case-debug-lab-0.1.0.0-spec.log
+1 of 1 test suites (1 of 1 test cases) passed.
