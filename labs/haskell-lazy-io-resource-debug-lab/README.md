@@ -12,7 +12,7 @@
 
 ## 不具合の再現
 
-不具合状態では、`readGreeting` は `String` を返したように見えても、文字数を要求した時点で `hGetContents: illegal operation (delayed read on closed handle)` を送出します。
+不具合状態は `0a53a2d` です。不具合状態では、`readGreeting` は `String` を返したように見えても、文字数を要求した時点で `hGetContents: illegal operation (delayed read on closed handle)` を送出します。
 
 ```bash
 cabal test --offline --test-show-details=direct
@@ -22,7 +22,7 @@ cabal test --offline --test-show-details=direct
 
 ## 修正後の検証
 
-修正後も同じコマンドを実行します。返された文字列を `withFile` の外で完全に消費できることを回帰テストとして確認します。
+修正コミットは `0adcaa7` です。修正後も同じコマンドを実行します。返された文字列を `withFile` の外で完全に消費できることを回帰テストとして確認します。
 
 ## 学べること
 
