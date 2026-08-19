@@ -1,8 +1,6 @@
 module RoleSearch (containsAdmin) where
 
-import Data.List (foldl)
-
 containsAdmin :: [String] -> Bool
-containsAdmin = foldl step False
+containsAdmin = foldr step False
   where
-    step found role = found || role == "admin"
+    step role found = role == "admin" || found
