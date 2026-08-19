@@ -12,7 +12,7 @@
 
 ## 不具合の再現
 
-不具合状態では `countDown (-1)` が`Nothing`を返さず、`n - 1`を繰り返します。
+不具合コミットは `76456f2` です。不具合状態では `countDown (-1)` が`Nothing`を返さず、`n - 1`を繰り返します。
 
 ```bash
 cabal test --offline --test-show-details=direct
@@ -22,7 +22,7 @@ cabal test --offline --test-show-details=direct
 
 ## 修正後の検証
 
-修正後も同じコマンドを実行します。負数は`Nothing`、ゼロと正数はゼロまでの列を返すことを確認します。
+修正コミットは `23b42c9` です。修正後も同じコマンドを実行します。負数は`Nothing`、ゼロと正数はゼロまでの列を返すことを確認します。
 
 ## 学べること
 
