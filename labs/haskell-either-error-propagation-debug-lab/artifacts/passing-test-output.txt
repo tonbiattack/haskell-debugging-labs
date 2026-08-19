@@ -1,0 +1,27 @@
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-either-error-propagation-debug-lab-0.1.0.0 (lib) (file src/PortConfig.hs changed)
+ - haskell-either-error-propagation-debug-lab-0.1.0.0 (test:spec) (dependency rebuilt)
+Preprocessing library for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Building library for haskell-either-error-propagation-debug-lab-0.1.0.0..
+[1 of 1] Compiling PortConfig       ( src/PortConfig.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/build/PortConfig.o, /home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/build/PortConfig.dyn_o ) [Source file changed]
+Preprocessing test suite 'spec' for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-either-error-propagation-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o ) [PortConfig changed]
+[2 of 2] Linking /home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/t/spec/build/spec/spec [Objects changed]
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+loadPort
+  rejects non-numeric input instead of selecting a default port [✔]
+  rejects a numeric port outside the valid range [✔]
+  returns a valid numeric port [✔]
+  rejects every non-empty lowercase alphabetic input [✔]
+    +++ OK, passed 100 tests.
+
+Finished in 0.0016 seconds
+4 examples, 0 failures
+Test suite spec: PASS
+Test suite logged to:
+/home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/t/spec/test/haskell-either-error-propagation-debug-lab-0.1.0.0-spec.log
+1 of 1 test suites (1 of 1 test cases) passed.

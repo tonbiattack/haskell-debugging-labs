@@ -6,13 +6,13 @@ import Text.Read (readMaybe)
 
 -- | Load a TCP port from text.
 --
--- This intentionally buggy implementation treats a parse failure as the
--- default port. Its result type promises a diagnostic in 'Left', but malformed
--- input is silently accepted as a successful configuration.
+-- Parsing and range validation are both part of the public error contract.
+-- A malformed value is preserved as 'Left' rather than silently selecting a
+-- different, successful configuration.
 loadPort :: String -> Either String Int
 loadPort raw =
   case readMaybe raw of
-    Nothing -> Right 8080
+    Nothing -> Left "port must be an integer"
     Just port -> validatePort port
 
 validatePort :: Int -> Either String Int
