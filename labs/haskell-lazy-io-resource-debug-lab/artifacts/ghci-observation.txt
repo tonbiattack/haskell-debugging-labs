@@ -1,0 +1,2 @@
+readGreeting :: FilePath -> IO String
+*** Exception: artifacts/greeting.txt: hGetContents: illegal operation (delayed read on closed handle)
