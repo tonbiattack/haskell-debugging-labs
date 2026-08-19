@@ -9,6 +9,8 @@ Haskell固有の実行時挙動、エラー表現、パターンマッチを、*
 | `haskell-partial-function-debug-lab` | `[a]` と `head` の部分性、`Maybe` | `823020a` | `ab3d59e` |
 | `haskell-either-error-propagation-debug-lab` | 解析失敗を`Either`の`Left`で伝播する | `524d38f` | `3962631` |
 | `haskell-pattern-match-debug-lab` | 代数的データ型の全コンストラクタを網羅する | `8123267` | `a0c8e25` |
+| `haskell-foldl-strictness-debug-lab` | 無限入力に対する畳み込みの生産性と短絡評価 | `6bbdd3e` | `d8f8ec8` |
+| `haskell-lazy-io-resource-debug-lab` | 遅延I/Oと`withFile`のハンドル寿命を一致させる | `0a53a2d` | `0adcaa7` |
 
 ## 実行方法
 
