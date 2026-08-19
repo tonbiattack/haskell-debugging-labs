@@ -2,7 +2,7 @@
 
 文字列からTCPポートを読み込む処理で、`Either String Int` を返しているにもかかわらず、非数値入力を既定ポートへ静かに置き換える不具合を再現するラボです。
 
-不具合を含むコミットは `0aa776e` です。`loadPort "http"` は `Left "port must be an integer"` を返すべきですが、`Right 8080` を返します。Hspecの失敗出力とGHCiの観測は `artifacts/` に保存しています。修正コミット `d0ad45c` は、同じテストを回帰テストとして成功させます。
+不具合を含むコミットは `524d38f` です。`loadPort "http"` は `Left "port must be an integer"` を返すべきですが、`Right 8080` を返します。Hspecの失敗出力とGHCiの観測は `artifacts/` に保存しています。修正コミット `3962631` は、同じテストを回帰テストとして成功させます。
 
 ## 前提環境
 
@@ -16,14 +16,14 @@
 ## 不具合の再現
 
 ```bash
-git switch --detach 0aa776e
+git switch --detach 524d38f
 cabal test --offline --test-show-details=direct
 ```
 
 初期状態では、非数値入力を拒否する例と英小文字列を拒否するプロパティが失敗します。修正状態は次で検証します。
 
 ```bash
-git switch --detach d0ad45c
+git switch --detach 3962631
 cabal test --offline --test-show-details=direct
 ```
 
