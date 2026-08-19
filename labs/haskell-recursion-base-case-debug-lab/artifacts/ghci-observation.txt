@@ -1,0 +1,6 @@
+--- finite input ---
+countDown :: Int -> Maybe [Int]
+Just [3,2,1,0]
+--- negative input ---
+<interactive>: signal: 15
+exit_status=124 (124 means timeout)
