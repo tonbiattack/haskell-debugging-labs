@@ -43,7 +43,7 @@ loadPort raw =
 
 元の失敗テストを残し、任意の非空英小文字列を拒否するQuickCheckプロパティも残した。`cabal test --offline --test-show-details=direct` は4 examples, 0 failures、QuickCheckは100件成功となった。成功出力は `artifacts/passing-test-output.txt` に保存している。
 
-不具合状態は `0aa776e`、最小修正と回帰テストは `d0ad45c` に分離した。
+不具合状態は `524d38f`、最小修正と回帰テストは `3962631` に分離した。
 
 ## 参考資料
 

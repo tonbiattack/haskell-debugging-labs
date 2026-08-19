@@ -42,7 +42,7 @@ deliveryMessage (Failed reason) = "failed: " ++ reason
 
 元の失敗ケースを削除せず、三つのコンストラクタすべてをHspecで検証した。`cabal test --offline --test-show-details=direct` は3 examples, 0 failuresとなり、`-Wincomplete-patterns` の警告も出なくなった。成功出力は `artifacts/passing-test-output.txt` に保存している。
 
-不具合状態は `710692b`、最小修正と回帰テストは `d6165fa` に分離した。
+不具合状態は `8123267`、最小修正と回帰テストは `a0c8e25` に分離した。
 
 ## 参考資料
 
