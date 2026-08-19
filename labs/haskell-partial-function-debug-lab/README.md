@@ -2,7 +2,7 @@
 
 `head` が型検査を通過しても、空リストを受け取ると実行時例外になることを再現し、`Maybe` を返す関数の契約をパターンマッチで守るまでを学ぶ最小プロジェクトです。
 
-この作業ツリーの初期コミットは意図的に不具合を含みます。`firstName []` は `Nothing` を返すべきですが、実装が `head` を評価するため `Prelude.head: empty list` で失敗します。後続の修正コミットでは、同じテストを回帰テストとして成功させます。
+不具合を含むコミットは `a651252` です。`firstName []` は `Nothing` を返すべきですが、実装が `head` を評価するため `Prelude.head: empty list` で失敗します。修正コミット `40c403b` では、同じテストを回帰テストとして成功させます。
 
 ## 前提環境
 
@@ -17,6 +17,7 @@
 不具合を含むコミットをチェックアウトしてから、次を実行します。
 
 ```bash
+git switch --detach a651252
 cabal test --offline --test-show-details=direct
 ```
 
@@ -24,7 +25,12 @@ cabal test --offline --test-show-details=direct
 
 ## 修正後の検証
 
-修正コミットをチェックアウトした状態で同じコマンドを実行すると、すべてのテストが成功します。
+修正コミットをチェックアウトして同じコマンドを実行すると、すべてのテストが成功します。
+
+```bash
+git switch --detach 40c403b
+cabal test --offline --test-show-details=direct
+```
 
 ## 学べること
 
