@@ -1,0 +1,43 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-foldl-strictness-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-foldl-strictness-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-foldl-strictness-debug-lab-0.1.0.0..
+Preprocessing library for haskell-foldl-strictness-debug-lab-0.1.0.0..
+Building library for haskell-foldl-strictness-debug-lab-0.1.0.0..
+[1 of 1] Compiling RoleSearch       ( src/RoleSearch.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-foldl-strictness-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-foldl-strictness-debug-lab-0.1.0.0/build/RoleSearch.o, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-foldl-strictness-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-foldl-strictness-debug-lab-0.1.0.0/build/RoleSearch.dyn_o )
+Configuring test suite 'spec' for haskell-foldl-strictness-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-foldl-strictness-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-foldl-strictness-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-foldl-strictness-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-foldl-strictness-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/haskell-debugging-labs/labs/haskell-foldl-strictness-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-foldl-strictness-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+containsAdmin
+  returns True when admin is the first element of an infinite role stream [✘]
+  returns False for a finite stream with no admin role [✔]
+
+Failures:
+
+  test/Spec.hs:13:14: 
+  1) containsAdmin returns True when admin is the first element of an infinite role stream
+       expected: Just True
+        but got: Nothing
+
+  To rerun use: --match "/containsAdmin/returns True when admin is the first element of an infinite role stream/"
+
+Randomized with seed 1445757250
+
+Finished in 1.0006 seconds
+2 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/haskell-debugging-labs/labs/haskell-foldl-strictness-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-foldl-strictness-debug-lab-0.1.0.0/t/spec/test/haskell-foldl-strictness-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-foldl-strictness-debug-lab-0.1.0.0.
+

@@ -1,0 +1,6 @@
+--- finite input ---
+containsAdmin :: [String] -> Bool
+True
+--- infinite input ---
+<interactive>: signal: 15
+exit_status=124 (124 means timeout)
