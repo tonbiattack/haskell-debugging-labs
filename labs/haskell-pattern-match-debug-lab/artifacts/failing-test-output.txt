@@ -1,0 +1,52 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-pattern-match-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-pattern-match-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-pattern-match-debug-lab-0.1.0.0..
+Preprocessing library for haskell-pattern-match-debug-lab-0.1.0.0..
+Building library for haskell-pattern-match-debug-lab-0.1.0.0..
+[1 of 1] Compiling DeliveryMessage  ( src/DeliveryMessage.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-pattern-match-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-pattern-match-debug-lab-0.1.0.0/build/DeliveryMessage.o, /home/ubuntu/work/private-go-task-management-api/labs/haskell-pattern-match-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-pattern-match-debug-lab-0.1.0.0/build/DeliveryMessage.dyn_o )
+
+src/DeliveryMessage.hs:19:1: warning: [-Wincomplete-patterns]
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘deliveryMessage’:
+        Patterns of type ‘Delivery’ not matched: Failed _
+   |
+19 | deliveryMessage Queued = "queued"
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+Configuring test suite 'spec' for haskell-pattern-match-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-pattern-match-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-pattern-match-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-pattern-match-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-pattern-match-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/private-go-task-management-api/labs/haskell-pattern-match-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-pattern-match-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+deliveryMessage
+  renders a failed delivery instead of raising a pattern-match exception [✘]
+  renders a queued delivery [✔]
+  renders a sent delivery with its tracking number [✔]
+
+Failures:
+
+  src/DeliveryMessage.hs:19:1: 
+  1) deliveryMessage renders a failed delivery instead of raising a pattern-match exception
+       uncaught exception: PatternMatchFail
+       src/DeliveryMessage.hs:(19,1)-(20,66): Non-exhaustive patterns in function deliveryMessage
+
+  To rerun use: --match "/deliveryMessage/renders a failed delivery instead of raising a pattern-match exception/"
+
+Randomized with seed 806431808
+
+Finished in 0.0004 seconds
+3 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/private-go-task-management-api/labs/haskell-pattern-match-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-pattern-match-debug-lab-0.1.0.0/t/spec/test/haskell-pattern-match-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-pattern-match-debug-lab-0.1.0.0.
+
