@@ -1,0 +1,3 @@
+mean :: [Int] -> Maybe Double
+Just 3.0
+Just 1.0

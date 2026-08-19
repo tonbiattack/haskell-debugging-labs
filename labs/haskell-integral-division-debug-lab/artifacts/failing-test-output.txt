@@ -1,0 +1,44 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-integral-division-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-integral-division-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-integral-division-debug-lab-0.1.0.0..
+Preprocessing library for haskell-integral-division-debug-lab-0.1.0.0..
+Building library for haskell-integral-division-debug-lab-0.1.0.0..
+[1 of 1] Compiling Average          ( src/Average.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-integral-division-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-integral-division-debug-lab-0.1.0.0/build/Average.o, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-integral-division-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-integral-division-debug-lab-0.1.0.0/build/Average.dyn_o )
+Configuring test suite 'spec' for haskell-integral-division-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-integral-division-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-integral-division-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-integral-division-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-integral-division-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/haskell-debugging-labs/labs/haskell-integral-division-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-integral-division-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+mean
+  keeps the fractional part of a non-integral average [✘]
+  returns an integral average when the sum divides evenly [✔]
+  returns Nothing for an empty collection [✔]
+
+Failures:
+
+  test/Spec.hs:10:19: 
+  1) mean keeps the fractional part of a non-integral average
+       expected: Just 1.5
+        but got: Just 1.0
+
+  To rerun use: --match "/mean/keeps the fractional part of a non-integral average/"
+
+Randomized with seed 352667763
+
+Finished in 0.0004 seconds
+3 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/haskell-debugging-labs/labs/haskell-integral-division-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-integral-division-debug-lab-0.1.0.0/t/spec/test/haskell-integral-division-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-integral-division-debug-lab-0.1.0.0.
+
