@@ -1,0 +1,2 @@
+loadPort :: String -> Either String Int
+Right 8080

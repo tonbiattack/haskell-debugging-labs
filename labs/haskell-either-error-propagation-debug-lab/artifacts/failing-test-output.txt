@@ -1,0 +1,51 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-either-error-propagation-debug-lab-0.1.0.0 (lib) (configuration changed)
+ - haskell-either-error-propagation-debug-lab-0.1.0.0 (test:spec) (configuration changed)
+Configuring library for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Preprocessing library for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Building library for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Configuring test suite 'spec' for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-either-error-propagation-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-either-error-propagation-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+loadPort
+  rejects non-numeric input instead of selecting a default port [✘]
+  rejects a numeric port outside the valid range [✔]
+  returns a valid numeric port [✔]
+  rejects every non-empty lowercase alphabetic input [✘]
+
+Failures:
+
+  test/Spec.hs:13:23: 
+  1) loadPort rejects non-numeric input instead of selecting a default port
+       expected: Left "port must be an integer"
+        but got: Right 8080
+
+  To rerun use: --match "/loadPort/rejects non-numeric input instead of selecting a default port/"
+
+  test/Spec.hs:21:5: 
+  2) loadPort rejects every non-empty lowercase alphabetic input
+       Falsified (after 1 test):
+         "g"
+
+  To rerun use: --match "/loadPort/rejects every non-empty lowercase alphabetic input/"
+
+Randomized with seed 350776017
+
+Finished in 0.0006 seconds
+4 examples, 2 failures
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/private-go-task-management-api/labs/haskell-either-error-propagation-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-either-error-propagation-debug-lab-0.1.0.0/t/spec/test/haskell-either-error-propagation-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-either-error-propagation-debug-lab-0.1.0.0.
+
