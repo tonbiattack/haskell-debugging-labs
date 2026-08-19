@@ -1,0 +1,51 @@
+Config file path source is default config file.
+Config file not found: /home/ubuntu/.cabal/config
+Writing default configuration to /home/ubuntu/.cabal/config
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-partial-function-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-partial-function-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-partial-function-debug-lab-0.1.0.0..
+Preprocessing library for haskell-partial-function-debug-lab-0.1.0.0..
+Building library for haskell-partial-function-debug-lab-0.1.0.0..
+[1 of 1] Compiling FirstName        ( src/FirstName.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/build/FirstName.o, /home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/build/FirstName.dyn_o )
+Configuring test suite 'spec' for haskell-partial-function-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-partial-function-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-partial-function-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+firstName
+  returns Nothing for an empty list instead of raising an exception [✘]
+  returns the first element for a non-empty list [✔]
+
+Failures:
+
+  src/FirstName.hs:11:25: 
+  1) firstName returns Nothing for an empty list instead of raising an exception
+       uncaught exception: ErrorCall
+       Prelude.head: empty list
+       CallStack (from HasCallStack):
+         error, called at libraries/base/GHC/List.hs:1646:3 in base:GHC.List
+         errorEmptyList, called at libraries/base/GHC/List.hs:85:11 in base:GHC.List
+         badHead, called at libraries/base/GHC/List.hs:81:28 in base:GHC.List
+         head, called at src/FirstName.hs:11:25 in haskell-partial-function-debug-lab-0.1.0.0-inplace:FirstName
+
+  To rerun use: --match "/firstName/returns Nothing for an empty list instead of raising an exception/"
+
+Randomized with seed 1752533273
+
+Finished in 0.0005 seconds
+2 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/private-go-task-management-api/labs/haskell-partial-function-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-partial-function-debug-lab-0.1.0.0/t/spec/test/haskell-partial-function-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-partial-function-debug-lab-0.1.0.0.
+
