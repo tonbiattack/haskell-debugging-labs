@@ -14,6 +14,9 @@ Haskell固有の実行時挙動、エラー表現、パターンマッチを、*
 | `haskell-zip-alignment-debug-lab` | `zip`の件数不一致によるデータ切り捨てを防ぐ | `33cb0c5` | `2581205` |
 | `haskell-recursion-base-case-debug-lab` | 負数入力での再帰停止条件を保証する | `76456f2` | `23b42c9` |
 | `haskell-integral-division-debug-lab` | 整数除算で平均の小数部を失わない | `2026713` | `31c9af1` |
+| `haskell-read-partial-debug-lab` | 部分関数`read`の解析例外を`Maybe`へ変換する | `07d5d99` | `8a46d13` |
+| `haskell-accumulator-order-debug-lab` | 逆順の累積器から入力順を回復する | `2c9f7bb` | `0c6f8d6` |
+| `haskell-int-overflow-debug-lab` | `Int`の上限で識別子がラップすることを防ぐ | `2c8c0ed` | `e83941f` |
 
 ## 実行方法
 
