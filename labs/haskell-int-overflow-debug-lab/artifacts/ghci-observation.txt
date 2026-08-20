@@ -1,0 +1,4 @@
+nextIdentifier :: Int -> Maybe Int
+Just 42
+9223372036854775807
+Just (-9223372036854775808)

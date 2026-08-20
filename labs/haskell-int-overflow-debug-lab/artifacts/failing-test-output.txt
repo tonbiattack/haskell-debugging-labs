@@ -1,0 +1,44 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-int-overflow-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-int-overflow-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-int-overflow-debug-lab-0.1.0.0..
+Preprocessing library for haskell-int-overflow-debug-lab-0.1.0.0..
+Building library for haskell-int-overflow-debug-lab-0.1.0.0..
+[1 of 1] Compiling Identifier       ( src/Identifier.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-int-overflow-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-int-overflow-debug-lab-0.1.0.0/build/Identifier.o, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-int-overflow-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-int-overflow-debug-lab-0.1.0.0/build/Identifier.dyn_o )
+Configuring test suite 'spec' for haskell-int-overflow-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-int-overflow-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-int-overflow-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-int-overflow-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-int-overflow-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/haskell-debugging-labs/labs/haskell-int-overflow-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-int-overflow-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+nextIdentifier
+  returns Nothing at maxBound instead of wrapping to a negative identifier [✘]
+  increments a normal identifier [✔]
+  keeps zero non-negative when incremented [✔]
+
+Failures:
+
+  test/Spec.hs:10:31: 
+  1) nextIdentifier returns Nothing at maxBound instead of wrapping to a negative identifier
+       expected: Nothing
+        but got: Just (-9223372036854775808)
+
+  To rerun use: --match "/nextIdentifier/returns Nothing at maxBound instead of wrapping to a negative identifier/"
+
+Randomized with seed 1452496263
+
+Finished in 0.0003 seconds
+3 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/haskell-debugging-labs/labs/haskell-int-overflow-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-int-overflow-debug-lab-0.1.0.0/t/spec/test/haskell-int-overflow-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-int-overflow-debug-lab-0.1.0.0.
+
