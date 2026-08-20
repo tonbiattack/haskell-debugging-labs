@@ -13,7 +13,7 @@
 
 ## 不具合の再現
 
-不具合状態では `nextIdentifier maxBound` が`Nothing`ではなく負数の識別子を返します。
+不具合コミットは `2c8c0ed` です。不具合状態では `nextIdentifier maxBound` が`Nothing`ではなく負数の識別子を返します。
 
 ```bash
 cabal test --offline --test-show-details=direct
@@ -23,7 +23,7 @@ cabal test --offline --test-show-details=direct
 
 ## 修正後の検証
 
-修正後も同じコマンドを実行します。`maxBound`は`Nothing`、通常値とゼロは正しく増分されることを確認します。
+修正コミットは `e83941f` です。修正後も同じコマンドを実行します。`maxBound`は`Nothing`、通常値とゼロは正しく増分されることを確認します。
 
 ## 学べること
 
