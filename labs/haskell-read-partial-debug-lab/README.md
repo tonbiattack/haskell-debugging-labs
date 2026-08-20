@@ -12,7 +12,7 @@
 
 ## 不具合の再現
 
-不具合状態では `parseRetryLimit "many"` が`Nothing`を返さず、`Prelude.read: no parse`で例外になります。
+不具合コミットは `07d5d99` です。不具合状態では `parseRetryLimit "many"` が`Nothing`を返さず、`Prelude.read: no parse`で例外になります。
 
 ```bash
 cabal test --offline --test-show-details=direct
@@ -22,7 +22,7 @@ cabal test --offline --test-show-details=direct
 
 ## 修正後の検証
 
-修正後も同じコマンドを実行します。不正文字列と末尾文字を含む入力は`Nothing`、完全な数値は`Just`となることを確認します。
+修正コミットは `8a46d13` です。修正後も同じコマンドを実行します。不正文字列と末尾文字を含む入力は`Nothing`、完全な数値は`Just`となることを確認します。
 
 ## 学べること
 
