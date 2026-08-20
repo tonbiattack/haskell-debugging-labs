@@ -1,0 +1,3 @@
+collectLabels :: [String] -> [String]
+[]
+["third","second","first"]

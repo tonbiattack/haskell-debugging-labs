@@ -1,0 +1,44 @@
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+Resolving dependencies...
+Build profile: -w ghc-9.4.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-accumulator-order-debug-lab-0.1.0.0 (lib) (first run)
+ - haskell-accumulator-order-debug-lab-0.1.0.0 (test:spec) (first run)
+Configuring library for haskell-accumulator-order-debug-lab-0.1.0.0..
+Preprocessing library for haskell-accumulator-order-debug-lab-0.1.0.0..
+Building library for haskell-accumulator-order-debug-lab-0.1.0.0..
+[1 of 1] Compiling Labels           ( src/Labels.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-accumulator-order-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-accumulator-order-debug-lab-0.1.0.0/build/Labels.o, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-accumulator-order-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-accumulator-order-debug-lab-0.1.0.0/build/Labels.dyn_o )
+Configuring test suite 'spec' for haskell-accumulator-order-debug-lab-0.1.0.0..
+Preprocessing test suite 'spec' for haskell-accumulator-order-debug-lab-0.1.0.0..
+Building test suite 'spec' for haskell-accumulator-order-debug-lab-0.1.0.0..
+[1 of 1] Compiling Main             ( test/Spec.hs, /home/ubuntu/work/haskell-debugging-labs/labs/haskell-accumulator-order-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-accumulator-order-debug-lab-0.1.0.0/t/spec/build/spec/spec-tmp/Main.o )
+[2 of 2] Linking /home/ubuntu/work/haskell-debugging-labs/labs/haskell-accumulator-order-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-accumulator-order-debug-lab-0.1.0.0/t/spec/build/spec/spec
+Running 1 test suites...
+Test suite spec: RUNNING...
+
+collectLabels
+  preserves the caller's input order [✘]
+  returns an empty list for empty input [✔]
+  keeps a singleton unchanged [✔]
+
+Failures:
+
+  test/Spec.hs:11:9: 
+  1) collectLabels preserves the caller's input order
+       expected: ["first", "second", "third"]
+        but got: ["third", "second", "first"]
+
+  To rerun use: --match "/collectLabels/preserves the caller's input order/"
+
+Randomized with seed 1525927004
+
+Finished in 0.0004 seconds
+3 examples, 1 failure
+Test suite spec: FAIL
+Test suite logged to:
+/home/ubuntu/work/haskell-debugging-labs/labs/haskell-accumulator-order-debug-lab/dist-newstyle/build/x86_64-linux/ghc-9.4.7/haskell-accumulator-order-debug-lab-0.1.0.0/t/spec/test/haskell-accumulator-order-debug-lab-0.1.0.0-spec.log
+0 of 1 test suites (0 of 1 test cases) passed.
+Error: cabal: Tests failed for test:spec from
+haskell-accumulator-order-debug-lab-0.1.0.0.
+
