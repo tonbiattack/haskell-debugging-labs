@@ -12,7 +12,7 @@
 
 ## 不具合の再現
 
-不具合状態では `collectLabels ["first", "second", "third"]` が逆順を返します。
+不具合コミットは `2c9f7bb` です。不具合状態では `collectLabels ["first", "second", "third"]` が逆順を返します。
 
 ```bash
 cabal test --offline --test-show-details=direct
@@ -22,7 +22,7 @@ cabal test --offline --test-show-details=direct
 
 ## 修正後の検証
 
-修正後も同じコマンドを実行します。複数要素、空入力、単一要素について、入力順が保たれることを確認します。
+修正コミットは `0c6f8d6` です。修正後も同じコマンドを実行します。複数要素、空入力、単一要素について、入力順が保たれることを確認します。
 
 ## 学べること
 
