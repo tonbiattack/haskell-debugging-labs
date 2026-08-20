@@ -1,4 +1,6 @@
 module RetryLimit (parseRetryLimit) where
 
+import Text.Read (readMaybe)
+
 parseRetryLimit :: String -> Maybe Int
-parseRetryLimit raw = Just (read raw)
+parseRetryLimit = readMaybe
